@@ -2,4 +2,4 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/connect-aws-documentroot/
+    destination: /home/ec2-user/connect
