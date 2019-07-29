@@ -1,0 +1,1816 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.step_in:after,
+.clearfix:after {
+content:'';
+display:block;
+clear:both;
+}
+
+.step_in,
+.clearfix {
+zoom:1;
+}
+
+body{
+	width: 100vw;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+	font-weight: bold;
+	font-size: 16px;
+	background: black;
+}
+
+.pc{
+	display: block;
+}
+
+.sp{
+	display: none;
+}
+
+
+
+/*****:::::::::::::::::::::::::::::::::::
+
+fadein アニメーション
+
+:::::::::::::::::::::::::::::::::::******/
+
+/*ヒストリーテキストボックスのアニメーション*/
+/*jsでactiveクラスの付け外し*/
+
+
+/* 画面外にいる状態 */
+.fadein {
+    opacity : 0;
+    transform : translate(0, 50px);
+    transition : all 500ms;
+    }
+
+/* 画面内に入った状態 */
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+    }
+
+
+/*****:::::::::::::::::::::::::::::::::::
+
+TOP
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+header{
+	position: absolute;
+	z-index: 5;
+	display: block;
+	padding: 10px;
+}
+
+#TopView{
+	position: relative;
+}
+
+header img{
+	width: 293px;
+	height: auto;
+}
+
+
+#TopPage #Toplogo{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 2;
+	background:
+		linear-gradient(-45deg, rgba(0, 113, 188, .4), rgba(0, 255, 255, .4));
+}
+
+h1{
+	display: block;
+	position: absolute;
+	top: 330px;
+	left: 50%;
+	z-index: 2;
+	width: 610px;
+	margin-left: -305px;
+	text-align: center;
+}
+
+h1 img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.BtnWrapper{
+	position: absolute;
+	width: 100%;
+	top:500px;
+	text-align: center;
+	display: block;
+	z-index: 2;
+}
+
+.BtnWrapper .offerBtn{
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 350px;
+	padding: 15px;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	background: url("../img/btn_decoration.png")no-repeat center center / 80%;
+	border: solid 3px white;
+	transition: 0.2s;
+	cursor: pointer;
+	border-radius: 50px;
+}
+
+
+.BtnWrapper .offerBtn:hover{
+	width: 380px;
+	text-shadow: 0 0 5px rgba(89,168,243,1);
+	box-shadow: 0 0 5px rgba(89,168,243,1);
+	background: url("../img/btn_decoration.png")no-repeat center center / 90%;
+}
+
+
+#TopPage #TopView{
+	position: relative;
+	width: 100vw;
+	height: 768px;
+	overflow: hidden;
+	background: url("../img/top.jpeg")no-repeat center center / cover;
+}
+
+
+
+/*****:::::::::::::::::::::::::::::::::::
+
+about
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+
+#about{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 507px;
+	background:url("../img/about_bg.jpg")no-repeat center center / cover;
+	justify-content: center;
+	align-items: center;
+}
+
+#about::after{
+	position: absolute;
+	top: -45px;
+	left: 50%;
+	margin-left: -47.5px;
+	content: "";
+	background:url("../img/small_logo1.png")no-repeat center center / cover;
+	width: 95px;
+	height: 95px;
+	z-index: 10;
+}
+
+#about::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(24,50,101,0.9);
+}
+
+#about strong{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#about h2{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	line-height: 50px;
+	z-index: 1;
+}
+
+
+
+/*****:::::::::::::::::::::::::::::::::::
+
+plan
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+#plan{
+	position: relative;
+	display: flex;
+	display: block;
+	width: 100%;
+	height: 1033px;;
+	background: white;
+}
+
+
+#plan h3{
+	display: flex;
+	width: 100%;
+	height: 300px;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#plan h3 img{
+	display: block;
+	position: relative;
+	width: 1000px;
+	height: auto;
+}
+
+
+#plan h3 img::after{
+	width: 100%;
+	background-color: #59a8f3;
+	 -webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	font-weight: 100;
+	text-align: right;
+	padding-top:10px;
+	content: "※商品の内容等弊社で把握しご提案。";
+	display: block;
+	font-size: 16px;
+}
+
+
+#plan ul{
+	display: flex;
+	width: 100%;
+	height: 600px;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+#plan ul li{
+	display: flex;
+	width: 50%;
+	max-width: 500px;
+	height: 100%;
+	box-sizing: border-box;
+	
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+#plan ul li img{
+	width: 223px;
+	height: auto;
+}
+
+#plan ul li p{
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#plan ul li p .plantitle{
+	display: inline-block;
+	font-size: 1.6em;
+	font-weight: bold;
+	padding: 50px;
+}
+
+#plan ul li p .plansubtitle{
+	display: inline-block;
+	color: grey;
+	padding: 20px;
+}
+
+
+/*****:::::::::::::::::::::::::::::::::::
+
+osusume
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+#osusume{
+	position: relative;
+	display: flex;
+	width: 100%;
+	background:
+		linear-gradient(-45deg, rgba(0, 113, 188,1), rgba(0, 255, 255,1));
+	
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#osusume::before{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: url("../img/osusume_bg.png")no-repeat center center / cover;
+}
+
+#osusume h3 {
+	position: relative;
+	display: flex;
+	width: 100%;
+	
+	justify-content: center;
+	align-items: center;
+
+}
+
+#osusume h3 p{
+	display: block;
+	width: 100%;
+	padding: 60px 0;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	z-index: 1;
+}
+
+#osusume h3::before{
+	content: "";
+	position: absolute;
+	top:50%;
+	margin-top: -45px;
+	left: 50%;
+	margin-left: -45px;
+	width: 95px;
+	height: 95px;
+	background:url("../img/osusume_h3_bg.png")no-repeat center center /cover;
+}
+
+#osusume ul{
+	display: flex;
+	width: 100%;
+	padding-bottom: 60px;
+	
+	justify-content: center;
+	align-items: baseline;
+}
+
+#osusume ul li{
+	display: flex;
+	max-width: 241px;
+	margin: 50px;
+	
+	justify-content: center;
+	flex-direction: column;
+}
+
+#osusume ul li img{
+	width: 241px;
+	margin: 0 auto;
+	height: auto;
+}
+
+#osusume ul li p{
+	display: block;
+	width: 100%;
+	color: white;
+	line-height: 1.5em;
+	text-align: center;
+	margin-top:30px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+/*****:::::::::::::::::::::::::::::::::::
+
+service
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+#service{
+	display: flex;
+	width: 100%;
+	height: 800px;
+	background:url("../img/service.jpeg")no-repeat center center /cover;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+
+#service div{
+	display: flex;
+	width: 50%;
+	height: 100%;
+	
+	flex-direction: column;
+	justify-content: center;
+	padding: 40px;
+}
+
+#service div:nth-child(1){
+	background:rgba(24,50,101,0.9);
+}
+
+#service h3 p{
+	display: block;
+	font-size: 30px;
+	color: white;
+	padding: 20px 0;
+	border-bottom: solid 1px;
+}
+
+#service ul{
+	width: 100%;
+}
+
+#service ul li{
+	position: relative;
+	width: 100%;
+	color: white;
+	font-size: 25px;
+	margin: 40px 0;
+	padding-left: 25px;
+	line-height: 1.3em;
+}
+
+#service ul li::before{
+	content: "";
+	position: absolute;
+	top:5px;
+	left: 0;
+	width: 23px;
+	height: 23px;
+	background: url("../img/service_list_icon.png")no-repeat center center /cover;
+}
+
+#service ul li span{
+	color: #ffff1a;
+}
+
+
+
+
+
+/*****:::::::::::::::::::::::::::::::::::
+
+portalsite
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+
+
+#portalsite{
+	display: flex;
+	width: 100%;
+	background:#eaeaea;
+	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#portalsite h3 {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 20%;
+	
+	justify-content: center;
+	align-items: center;
+
+}
+
+#portalsite h3 p{
+	display: block;
+	width: 100%;
+	padding: 60px 0;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #474747;
+	z-index: 1;
+}
+
+#portalsite h3::before{
+	content: "";
+	position: absolute;
+	top:50%;
+	margin-top: -45px;
+	left: 50%;
+	margin-left: -45px;
+	width: 95px;
+	height: 95px;
+	background:url("../img/osusume_h3_bg.png")no-repeat center center /cover;
+}
+
+#portalsite ul{
+	display: flex;
+	width: 100%;
+	max-width: 1200px;
+	
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#portalsite ul li{
+	display: flex;
+	position: relative;
+	width: 45%;
+	max-width: 576px;
+	margin-bottom: 50px;
+	background: white;
+	box-shadow: 0 7px 10px rgba(0,0,0,0.1);
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+	box-sizing: border-box;
+}
+
+#portalsite ul li:hover{
+	transform: translateY(-5px);
+	box-shadow: 0 12px 10px rgba(0,0,0,0.1);
+}
+
+#portalsite ul li img{
+	display: block;
+	width: 60%;
+	height: auto;
+}
+
+#portalsite ul a{
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	justify-content: center;
+	align-items: center;
+}
+
+#portalsite ul .Link::before{
+  	font-family: "Font Awesome 5 Free";
+  	content: "\f35d";
+  	font-weight: 900;
+	font-size: 20px;
+	color: #59a8f3;
+	position: absolute;
+	top:10px;
+	left: 10px;
+	z-index: 10;
+	opacity: 0.3;
+	transition: 0.2s;
+}
+
+#portalsite ul .Link:hover:before{
+	opacity: 1;
+}
+
+#portalsite ul .NoLink::before{
+  	content: "※こちらのサイトは別途導入費用、月額費用がかかります";
+	font-size: 16px;
+	color: #59a8f3;
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,1.00);
+	z-index: 10;
+	transition: 0.2s;
+	opacity: 0;
+}
+
+#portalsite ul .NoLink:hover:before{
+	opacity: 0.5;
+}
+
+
+/*****:::::::::::::::::::::::::::::::::::
+
+info
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+
+
+#info{
+	display: flex;
+	width: 100%;
+	background:white;
+	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#info h3 {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 20%;
+	
+	justify-content: center;
+	align-items: center;
+
+}
+
+#info h3 p{
+	display: block;
+	width: 100%;
+	padding: 60px 0;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #474747;
+	z-index: 1;
+}
+
+#info h3::before{
+	content: "";
+	position: absolute;
+	top:50%;
+	margin-top: -45px;
+	left: 50%;
+	margin-left: -45px;
+	width: 95px;
+	height: 95px;
+	background:url("../img/osusume_h3_bg.png")no-repeat center center /cover;
+}
+
+#info img{
+	width: 60%;
+	height: auto;
+}
+
+
+/*****:::::::::::::::::::::::::::::::::::
+
+faq
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+
+
+#faq{
+	display: flex;
+	width: 100%;
+	background:rgba(24,50,101,0.9);
+	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#faq h3 {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 20%;
+	
+	justify-content: center;
+	align-items: center;
+
+}
+
+#faq h3 p{
+	display: block;
+	width: 100%;
+	padding: 60px 0;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	z-index: 1;
+}
+
+#faq h3::before{
+	content: "";
+	position: absolute;
+	top:50%;
+	margin-top: -45px;
+	left: 50%;
+	margin-left: -45px;
+	width: 95px;
+	height: 95px;
+	background:url("../img/osusume_h3_bg.png")no-repeat center center /cover;
+}
+
+#faq .faqsubtitle{
+	font-size: 25px;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+#faq ul{
+	display: flex;
+	width: 100%;
+	max-width: 1200px;
+	
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+#faq ul li{
+	display: flex;
+	flex-direction: column;
+	background: white;
+	width: 100%;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	padding: 20px;
+	box-shadow: 0 7px 10px rgba(0,0,0,0.1);
+	line-height: 1.5em;
+}
+
+#faq ul li .QText{
+	font-size: 30px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	border-bottom: solid 1px;
+}
+
+#faq ul li .AText{
+	font-size: 20px;
+	padding-top: 20px;
+	color: grey;
+}
+
+
+
+/*****:::::::::::::::::::::::::::::::::::
+
+offer
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+#offer{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 743px;
+	background:url("../img/offer_bg.jpeg")no-repeat center center / cover;
+}
+
+#offer p{
+	display: block;
+	width: 100%;
+	z-index: 1;
+	font-size: 40px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	line-height: 1.8em;
+	padding-top: 230px;
+}
+
+#offer::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:
+		linear-gradient(-45deg, rgba(0, 113, 188, .4), rgba(0, 255, 255, .4));
+}
+
+
+
+/*****:::::::::::::::::::::::::::::::::::
+
+会社概要
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+#company{
+	display: flex;
+	width: 100%;
+	background-color: white;
+	
+	justify-content:flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+#company img{
+	width: 250px;
+	height: auto;
+	padding: 30px 0;
+}
+
+#company #CoABOUT{
+	display: flex;
+	width: 100%;
+	
+	justify-content: center;
+	align-items: center;
+	background:url("../img/btn_decoration.png")no-repeat center center / 70%,rgba(89,168,243,1);
+}
+
+#company #CoABOUT h2{
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 30px;
+	line-height: 50px;
+	letter-spacing: 0.3rem;
+	padding: 50px 0;
+	color: white;
+	font-weight: bold;
+	background: rgba(89,168,243,0.7);
+}
+
+#company #Coimfo{
+	display: flex;
+	width: 100%;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+#company  table{
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+}
+
+#company table td{
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+#company  .tabletitle{
+	font-weight: bold;
+}
+
+#company .IframeWrapper{
+	display: block;
+	width: 50%;
+	overflow: hidden;
+}
+
+#company iframe{
+	display: block;
+	width: 100%;
+	margin-top: -150px;
+	height:500px;
+}
+
+#company #CoService{
+	display: flex;
+	width: 100%;
+	background:rgba(24,50,101,0.9);
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 50px 0 0 0;
+}
+
+#company #CoService p{
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 30px;
+	letter-spacing: 0.3rem;
+	padding-bottom: 50px;
+	color: white;
+}
+
+
+#company #CoService ul{
+	display: flex;
+	width: 50%;
+	flex-flow: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+#company #CoService ul li{
+	display: flex;
+	width: 50%;
+	color: white;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+#company #CoService ul li a{
+	color: white;
+	display: block;
+	text-align: center;
+	width: 80%;
+	border-bottom: solid 1px;
+	padding: 20px 0;
+	transition: 0.2s;
+}
+
+#company #CoService ul li a:hover{
+	background: white;
+	color:rgba(24,50,101,0.9);
+}
+
+
+
+/*****:::::::::::::::::::::::::::::::::::
+
+フッター
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+footer{
+	position: relative;
+	width: 100vw;
+	background: #383838;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+footer #SocialLink{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+footer #SocialLink li{
+	padding: 0 30px;
+}
+
+footer #SocialLink li a{
+	color: white;
+	font-size: 30px;
+	transition: 0.2s;
+}
+
+footer #SocialLink li a:hover{
+opacity: 0.5;
+}
+
+footer nav {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	width: 100%;
+	padding: 30px 0;
+	margin: 0 auto;
+}
+
+footer nav li {
+	display: block;
+	list-style-type: none;
+}
+
+footer nav li a{
+	padding: 10px;
+	color: rgba(255,255,255,1.00);
+	font-size: 12px;
+	letter-spacing: 1px;
+	transition: 0.2s;
+	font-weight: bold;
+}
+
+footer nav li a:hover{
+	border-bottom: solid 1px;
+}
+
+small{
+	font-size: 12px;
+	color: rgba(255,255,255,1.00);
+	letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+レスポンシブ対応
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+
+@media screen and ( max-width:1200px) {
+	
+.pc{
+	display: none;
+}
+
+.sp{
+	display: block;
+}
+	
+
+/*****:::::::::::::::::::::::::::::::::::
+
+TOP
+
+:::::::::::::::::::::::::::::::::::******/
+
+	
+header{
+	position: absolute;
+	z-index: 5;
+	display: block;
+	padding: 10px;
+}
+
+header img{
+	width: 100px;
+	height: auto;
+}
+
+#TopPage #Toplogo{
+}
+
+h1{
+	top:200px;
+	left: 50%;
+	width: 300px;
+	margin-left: -150px;
+}
+
+h1 img{
+}
+
+.BtnWrapper{
+	position: absolute;
+	width: 100%;
+	top:320px;
+	text-align: center;
+	display: block;
+	z-index: 2;
+}
+
+.BtnWrapper .offerBtn{
+	width: 300px;
+	padding: 10px;
+	font-size: 20px;
+	border: solid 2.5px white;
+}
+
+
+.BtnWrapper .offerBtn:hover{
+	width: 320px;
+	text-shadow: 0 0 5px rgba(89,168,243,1);
+	box-shadow: 0 0 5px rgba(89,168,243,1);
+	background: url("../img/btn_decoration.png")no-repeat center center / 90%;
+}
+
+#TopPage #TopView{
+	height: 580px;
+}
+
+#TopPage .TopVirwImg {
+}
+
+
+/*****:::::::::::::::::::::::::::::::::::
+
+about
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+
+#about{
+	height: 300px;
+}
+
+#about::after{
+	position: absolute;
+	top: -35px;
+	left: 50%;
+	margin-left: -35px;
+	content: "";
+	background:url("../img/small_logo1.png")no-repeat center center / cover;
+	width: 70px;
+	height: 70px;
+	z-index: 10;
+}
+
+#about::before{
+}
+
+#about strong{
+}
+
+#about h2{
+	font-size: 15px;
+	line-height: 40px;
+}
+	
+	
+/*****:::::::::::::::::::::::::::::::::::
+
+plan
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+#plan{
+	position: relative;
+	display: flex;
+	display: block;
+	width: 100%;
+	height: 520px;
+	background: white;
+}
+
+
+#plan h3{
+	display: flex;
+	width: 100%;
+	height: 120px;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#plan h3 img{
+	width: 90%;
+	}
+
+#plan ul{
+	display: flex;
+	width: 100%;
+	height: 300px;
+	
+	justify-content: center;
+	align-items: baseline;
+}
+
+#plan ul li{
+	display: flex;
+	width: 50%;
+	max-width: 500px;
+	height: 100%;
+	box-sizing: border-box;
+	
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+#plan ul li img{
+	width: 110px;
+	height: auto;
+}
+
+#plan ul li p{
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#plan ul li p .plantitle{
+	display: inline-block;
+	font-size: 1.6em;
+	font-weight: bold;
+	padding: 25px;
+}
+
+#plan ul li p .plansubtitle{
+	display: inline-block;
+	color: grey;
+	padding: 10px;
+}
+
+	
+/*****:::::::::::::::::::::::::::::::::::
+
+osusume
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+#osusume{
+}
+
+#osusume::before{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: url("../img/osusume_bg.png")no-repeat center center / cover;
+}
+
+#osusume h3 {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 30%;
+	
+	justify-content: center;
+	align-items: center;
+
+}
+
+#osusume h3 p{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+#osusume h3::before{
+}
+
+#osusume ul{
+	display: flex;
+	width: 100%;
+	height: 70%;
+	
+	
+	justify-content:space-around;
+	align-items: baseline;
+}
+
+#osusume ul li{
+	display: flex;
+	width: 30%;
+	margin: 0px;
+	
+	justify-content: center;
+	flex-direction: column;
+}
+
+#osusume ul li img{
+	width: 100px;
+	margin: 0 auto;
+	height: auto;
+}
+
+#osusume ul li p{
+	display: block;
+	width: 100%;
+	color: white;
+	line-height: 1.5em;
+	text-align: center;
+	margin-top:30px;
+	font-size: 12px;
+	font-weight: bold;
+}
+	
+/*****:::::::::::::::::::::::::::::::::::
+
+service
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+#service{
+	display: flex;
+	width: 100%;
+	height: 700px;
+	background:url("../img/service.jpeg")no-repeat center center /cover;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+
+#service div{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	
+	flex-direction: column;
+	justify-content: center;
+	padding: 40px;
+}
+
+#service div:nth-child(1){
+	background:rgba(24,50,101,0.9);
+}
+	
+#service div:nth-child(2){
+	display: none;
+}
+
+#service h3 p{
+	display: block;
+	font-size: 30px;
+	color: white;
+	padding: 20px 0;
+	border-bottom: solid 1px;
+	text-align: center;
+}
+
+#service ul{
+	width: 100%;
+}
+
+#service ul li{
+	position: relative;
+	width: 100%;
+	color: white;
+	font-size: 16px;
+	margin: 40px 0;
+	padding-left: 23px;
+	line-height: 1.3em;
+}
+
+#service ul li::before{
+	content: "";
+	position: absolute;
+	top:3px;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	background: url("../img/service_list_icon.png")no-repeat center center /cover;
+}
+
+#service ul li span{
+	color: #ffff1a;
+}
+	
+	
+	
+	
+/*****:::::::::::::::::::::::::::::::::::
+
+portalsite
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+
+
+#portalsite{
+}
+
+
+#portalsite h3 {
+}
+
+#portalsite h3 p{
+	font-size: 25px;
+}
+
+#portalsite h3::before{
+	content: "";
+	position: absolute;
+	top:50%;
+	margin-top: -30px;
+	left: 50%;
+	margin-left: -30px;
+	width: 60px;
+	height: 60px;
+	background:url("../img/osusume_h3_bg.png")no-repeat center center /cover;
+}
+
+
+#portalsite ul{
+}
+
+#portalsite ul li{
+	display: flex;
+	position: relative;
+	width: 45%;
+	max-width: 576px;
+	margin-bottom: 20px;
+	background: white;
+	box-shadow: 0 7px 10px rgba(0,0,0,0.1);
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+	box-sizing: border-box;
+}
+
+#portalsite ul li:hover{
+}
+
+#portalsite ul li img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#portalsite ul a{
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+#portalsite ul .Link::before{
+  	font-family: "Font Awesome 5 Free";
+  	content: "\f35d";
+  	font-weight: 900;
+	font-size: 15px;
+	color: #59a8f3;
+	position: absolute;
+	top:10px;
+	left: 10px;
+	z-index: 10;
+	opacity: 0.3;
+	transition: 0.2s;
+}
+
+#portalsite ul .Link:hover:before{
+	opacity: 1;
+}
+
+#portalsite ul .NoLink::before{
+  	content: "※こちらのサイトは別途導入費用、月額費用がかかります";
+	font-size: 10px;
+	color: #59a8f3;
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,1.00);
+	z-index: 10;
+	transition: 0.2s;
+	opacity: 0;
+}
+
+#portalsite ul .NoLink:hover:before{
+	opacity: 0.5;
+}
+	
+/*****:::::::::::::::::::::::::::::::::::
+
+info
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+#info{
+}
+
+
+#info h3 {
+}
+
+#info h3 p{
+	padding: 30px 0;
+	font-size: 20px;
+}
+
+#info h3::before{
+	content: "";
+	position: absolute;
+	top:50%;
+	margin-top: -45px;
+	left: 50%;
+	margin-left: -45px;
+	width: 95px;
+	height: 95px;
+	background:url("../img/osusume_h3_bg.png")no-repeat center center /cover;
+}
+
+#info img{
+	width: 100%;
+	height: auto;
+}
+	
+	
+
+/*****:::::::::::::::::::::::::::::::::::
+
+faq
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+
+
+#faq{
+}
+
+
+#faq h3 {
+
+}
+
+#faq h3 p{
+}
+
+#faq h3::before{
+}
+
+#faq .faqsubtitle{
+	font-size: 16px;
+}
+
+#faq ul{
+	display: flex;
+	width: 95%;
+	max-width: 1200px;
+	
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+#faq ul li{
+	display: flex;
+	flex-direction: column;
+	background: white;
+	width: 100%;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	padding: 20px;
+	box-shadow: 0 7px 10px rgba(0,0,0,0.1);
+	line-height: 1em;
+}
+
+#faq ul li .QText{
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	border-bottom: solid 1px;
+}
+
+#faq ul li .AText{
+	font-size: 12px;
+	padding-top: 20px;
+	color: grey;
+}
+	
+
+
+/*****:::::::::::::::::::::::::::::::::::
+
+offer
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+#offer{
+	height: 543px;
+}
+
+#offer p{
+	font-size: 25px;
+	line-height: 1.8em;
+	padding-top: 120px;
+}
+
+#offer::before{
+}
+	
+
+/*****:::::::::::::::::::::::::::::::::::
+
+会社概要
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+#company{
+	display: flex;
+	width: 100%;
+	background-color: white;
+	
+	justify-content:flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+#company img{
+	width: 150px;
+	height: auto;
+	padding: 15px 0;
+}
+
+#company #CoABOUT{
+	display: flex;
+	width: 100%;
+	
+	justify-content: center;
+	align-items: center;
+	background:url("../img/btn_decoration.png")no-repeat center center / cover,rgba(89,168,243,1);
+}
+
+#company #CoABOUT h2{
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 16px;
+	line-height: 40px;
+	letter-spacing: 0rem;
+	padding: 40px 0;
+	color: white;
+	font-weight: bold;
+	background: rgba(89,168,243,0.7);
+}
+
+#company #Coimfo{
+	display: flex;
+	width: 100%;
+	
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+#company  table{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 0;
+}
+
+#company table td{
+	box-sizing: border-box;
+	padding: 5px;
+	font-size: 10px;
+}
+
+#company  .tabletitle{
+	font-weight: bold;
+}
+	
+#company .IframeWrapper{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+
+#company iframe{
+	display: block;
+	margin-top: -80px;
+	width: 100%;
+	height: 270px;
+}
+
+#company #CoService{
+	display: flex;
+	width: 100%;
+	background:rgba(24,50,101,0.9);
+	
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+	padding: 40px 0 0 0;
+	
+}
+
+#company #CoService p{
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 16px;
+	letter-spacing: 0.3rem;
+	padding-bottom: 30px;
+	color: white;
+}
+
+
+#company #CoService ul{
+	display: flex;
+	width: 100%;
+	
+	flex-flow: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+#company #CoService ul li{
+	display: flex;
+	width: 50%;
+	color: white;
+	
+	justify-content: center;
+	align-items: center;
+	font-size: 10px;
+}
+
+#company #CoService ul li a{
+	color: white;
+	display: block;
+	text-align: center;
+	width: 80%;
+	border-bottom: solid 1px;
+	padding: 20px 0;
+	transition: 0.2s;
+	font-size: 10px;
+}
+
+#company #CoService ul li a:hover{
+	background: white;
+	color:rgba(24,50,101,0.9);
+}
+
+
+	
+	
+/*****:::::::::::::::::::::::::::::::::::
+
+フッター
+
+:::::::::::::::::::::::::::::::::::******/
+
+
+footer{
+	height: 100px;
+	padding-top: 25px;
+	padding-bottom: 10px
+}
+
+footer nav {
+	padding: 15px 0;
+}
+	
+	
+footer #SocialLink{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+footer #SocialLink li{
+	padding: 0 30px;
+}
+
+footer #SocialLink li a{
+	color: white;
+	font-size: 20px;
+	transition: 0.2s;
+}
+
+footer #SocialLink li a:hover{
+opacity: 0.5;
+}
+
+
+footer nav li {
+}
+
+footer nav li a{
+	font-size: 8px;
+}
+
+
+small{
+	font-size: 6px;
+}
+	
+	
+
+}
+
+
+
