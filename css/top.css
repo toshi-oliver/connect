@@ -101,6 +101,16 @@ h1{
 	text-align: center;
 }
 
+h1::before{
+	position: absolute;
+	content: "On Tech";
+	text-align: center;
+	color: aliceblue;
+	top: 90px;
+	width: 100px;
+	margin-left: -50px;
+}
+
 h1 img{
 	display: block;
 	width: 100%;
@@ -303,6 +313,20 @@ plan
 	padding: 20px;
 }
 
+#plan ul li .kome1{
+	font-size: 5px;
+	color: gray;
+}
+
+#plan .kome1Text{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	color: gray;
+	padding: 20px;
+	font-size: 6px;
+}
 
 /*****:::::::::::::::::::::::::::::::::::
 
@@ -1077,6 +1101,12 @@ h1{
 	left: 50%;
 	width: 300px;
 	margin-left: -150px;
+}
+	
+h1::before{
+	top: 45px;
+	font-size: 10px;
+
 }
 
 h1 img{
